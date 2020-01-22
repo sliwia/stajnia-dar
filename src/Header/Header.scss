@@ -1,0 +1,23 @@
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+header h3 {
+    margin: 0 10px;
+    font-size: 20px;
+    color: rgb(155, 154, 154);
+}
+
+header img {
+    -webkit-filter: opacity(80%);
+    filter: opacity(80%);
+}
+
+.transform-img {
+    transform: scaleX(-1);
+}

@@ -1,0 +1,57 @@
+@import "../../_variables.scss";
+
+.main-title-carousel {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Apple Chancery', cursive;
+    color: white;
+    font-size: 22pt;
+}
+
+.main-desc-text {
+    font-size: 10pt;
+}
+
+.carosuel-photo {
+    width: 100%;
+    height: $heightHome;
+    object-fit: cover;
+}
+
+.shadow-box {
+    position: absolute;
+    height: $heightHome;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-content {
+    height: $heightHome;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+@media screen and (min-width: 768px){
+    .main-title-carousel {
+        font-size: 25pt;
+    }
+    .main-desc-text {
+        font-size: 11pt;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .main-title-carousel {
+        margin-bottom: 30px;
+        font-size: 35pt;
+    }
+    .main-desc-text {
+        font-size: 13pt;
+    }
+    .carosuel-photo {
+        object-fit: inherit;
+    }
+}

@@ -1,0 +1,97 @@
+@import "../../_variables.scss";
+
+#menu-container {
+    height: 80px;
+    background: #212020;
+}
+
+#menu-container nav {
+    margin-right: 50px;
+    height: 100% ;
+}
+
+
+#multi-drop-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    height: 100%;
+}
+
+#multi-drop-menu a {
+    text-decoration: none;
+}
+
+
+#multi-drop-menu ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#multi-drop-menu li {
+    color: #fff;
+    display: block;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#multi-drop-menu li a {
+    color: #fff;
+}
+#multi-drop-menu li a:hover{
+    color: $goldColor;
+}
+  
+#multi-drop-menu li:hover,
+#multi-drop-menu li:focus-within {
+    // background: rgb(7, 58, 100);
+    cursor: pointer;
+}
+
+#multi-drop-menu li:focus-within a {
+    outline: none;
+}
+  
+#multi-drop-menu ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 19px;
+    margin-left: -17px;
+    display: none;
+}
+  
+#multi-drop-menu ul li:hover > ul,
+#multi-drop-menu ul li:focus-within > ul,
+#multi-drop-menu ul li ul:hover,
+#multi-drop-menu ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    z-index: 1000;
+}
+  
+#multi-drop-menu ul li ul li {
+    background: #212020;
+    clear: both;
+    width: 100%;
+    padding-right: 200px;
+}
+
+
+.big-dot {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    background-color: $goldColor;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+
