@@ -3,7 +3,7 @@
 .main-title-carousel {
     margin-bottom: 20px;
     font-weight: bold;
-    font-family: 'Apple Chancery', cursive;
+    font-family: 'Georgia', serif;
     color: white;
     font-size: 22pt;
 }
@@ -34,6 +34,18 @@
     padding-top: 100px;
 }
 
+.btn-offer{
+    color:white;
+    font-size: 15px;
+    background: rgba(129, 122, 30, 0.219);
+    border: 2px $goldColor solid;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: 1s all;
+    outline: none;
+}
+
+
 @media screen and (min-width: 768px){
     .main-title-carousel {
         font-size: 25pt;
@@ -53,5 +65,9 @@
     }
     .carosuel-photo {
         object-fit: inherit;
+    }
+    .btn-offer:hover, .btn-offer:focus{
+        background-color:$goldColor;
+        outline: none;
     }
 }

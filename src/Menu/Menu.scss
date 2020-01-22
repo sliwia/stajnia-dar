@@ -1,11 +1,17 @@
 @import "../../_variables.scss";
 
 #menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
     height: 80px;
     background: #212020;
+    z-index: 100;
 }
 
 #menu-container nav {
+
     margin-right: 50px;
     height: 100% ;
 }

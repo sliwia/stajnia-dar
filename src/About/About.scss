@@ -1,48 +1,99 @@
+@import "../../_variables.scss";
 
-.main-title {
-    height: 130px;
-    background: darkgreen;
-    clip-path: polygon(0 0, 100% 0, 100% 40%, 0 100%);
+.about-main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    // border: 2px solid red;
+
 }
 
-.main-title h2 {
-    position: relative;
-    padding-top: 20px;
-    font-family: 'Apple Chancery', cursive;
+.about-main-title h2 {
+    position: absolute;
+    font-family: 'Georgia', serif;
     font-weight: bold;
     font-size:55px;
-    color:white;
-//     text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77,0,13,0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5), 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64,77,0,0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38,77,0,0.5);
-// color: #A7DD3C;
-    font-style: italic;
+    color:black;
+    margin-top:50px
+}
 
+.about-main-title h3 {
+    position: absolute;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    font-size:15px;
+    text-transform: uppercase;
+    color: $goldColor;
+    margin-top:30px
+    
+}
+
+.about-content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:60px;
+    margin-bottom:60px;
 }
 
 .describe {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-right: 80px;
+
 }
 .describe div {
-    font-size: 18px;
-    text-indent: 50px;
+    font-size: 15px;
     text-align: justify;
-    text-justify: inter-word;
 }
 
 .describe div span {
-    text-align: center;
     font-weight: bold;
 }
-.describe div span:nth-child(2) {
-    display: block;
-    font-size: 22px;
-}
 
-.describe div span:last-child {
-    text-decoration: underline;
-}
-
-.describe div:last-child {
-    text-align: center;
+.describe div:first-of-type {
+    margin-bottom: 15px;
+    text-align: left;
     font-weight: bold;
+}
+
+.describe div:last-of-type {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    text-align: left;
+    color: $goldColor;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-contact {
+    color:$goldColor;
+    font-size: 14px;
+    font-weight: bold;
+    background: none;
+    border: 2px $goldColor solid;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 1s all;
+    outline: none;
+}
+
+.picture-container {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (min-width: 768px){
+   
+}
+
+@media screen and (min-width: 1200px){
+    
+    .btn-contact:hover,.btn-contact:focus {
+        color: white;
+        background-color:$goldColor;
+        outline: none;
+    }
 }
