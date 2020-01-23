@@ -43,7 +43,7 @@ export const About = () => {
                         <button className="btn-contact">ZAPOZNAJ SIĘ Z NASZĄ OFERTĄ</button>
                     </div>
                     <div className="picture-container">
-                        <img src={AboutImg} alt="about" width={400} height={400} />
+                        <img src={AboutImg} alt="about" />
                     </div>
                     
                 </div>

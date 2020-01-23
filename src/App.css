@@ -1,6 +1,9 @@
 html { 
-    font-family: 'Roboto', sans-serif !important;
     scroll-behavior: smooth;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
 }
 
 

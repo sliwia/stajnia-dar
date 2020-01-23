@@ -3,13 +3,14 @@
 .main-title-carousel {
     margin-bottom: 20px;
     font-weight: bold;
-    font-family: 'Georgia', serif;
+    font-family: $titleFontStyle;
     color: white;
     font-size: 22pt;
 }
 
 .main-desc-text {
-    font-size: 10pt;
+    font-size: 10px;
+    font-family: $textFontStyle;
 }
 
 .carosuel-photo {
@@ -35,10 +36,11 @@
 }
 
 .btn-offer{
+    font-family: $textFontStyle;
     color:white;
     font-size: 15px;
     background: rgba(129, 122, 30, 0.219);
-    border: 2px $goldColor solid;
+    border: 1px $goldColor solid;
     padding: 10px 40px;
     cursor: pointer;
     transition: 1s all;
