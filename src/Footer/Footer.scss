@@ -1,16 +1,23 @@
 @import "../../_variables.scss";
 
-footer {
+.footer-content {
     display:flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 50px;
     width: 100%;
     background: $goldColor;
     color: white;
     letter-spacing: 0.03em;
-    margin-top:40px;
+    padding: 5px;
 }
+.footer-content span {
+    color: white;
+    font-size: 12px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
 
 .map-modal {
     width: 100vw;

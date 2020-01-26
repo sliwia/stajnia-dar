@@ -17,7 +17,7 @@ export const Menu = () => {
                             </ul>
                         </li>
                         <span className="big-dot"></span>
-                        <li><a href="#">Wydarzenia</a></li>
+                        <li><a style={{cursor: 'not-allowed',opacity: 0.6}}>Wydarzenia</a></li>
                         <span className="big-dot"></span>
                         <li><a href="#">Galeria</a></li>
                         <span className="big-dot"></span>
@@ -27,7 +27,7 @@ export const Menu = () => {
                         <span className="big-dot"></span> */}
                         <li><a href="#price-list">Cennik</a></li>
                         <span className="big-dot"></span>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
                     
                     </ul>
                 </nav>

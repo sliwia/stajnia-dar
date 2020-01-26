@@ -1,0 +1,25 @@
+@import "../../_variables.scss";
+
+
+.contact-items {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.contact-items div span {
+    margin-left: 20px;
+    word-wrap: break-word
+}
+
+.post-code {
+    display: block;
+    padding-left: 20px;
+}
+
+.map-content {
+    height: 300px;
+    width: 100%;
+    margin:0;
+    margin-top:40px;
+}

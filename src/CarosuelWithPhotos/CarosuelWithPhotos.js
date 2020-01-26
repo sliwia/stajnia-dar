@@ -24,7 +24,7 @@ export const CarosuelWithPhotos = () => {
             {
               imgsList.map((img, index) => {
                 return (
-                  <Carousel.Item>
+                  <Carousel.Item key={index}>
                     <div className="shadow-box"></div>
                     <img
                       className="d-block w-100 carosuel-photo"

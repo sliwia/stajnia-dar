@@ -8,6 +8,7 @@ import { AboutTrainer } from './AboutTrainer/AboutTrainer';
 import { Offer } from './Offer/Offer';
 import { PriceList } from './PriceList/PriceList';
 import { Footer } from './Footer/Footer';
+import { Contact } from './Contact/Contact';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <AboutTrainer />
       <Offer />
       <PriceList />
+      <Contact />
       <Footer />
       
     </div>
