@@ -6,16 +6,12 @@ import AboutImg from '../files/pictures/about.jpg'
 export const About = () => {
         return (
             <section id="about">
-                <div className="container about-main-title">
+                <div className="container main-title-section">
                     <h2>STAJNIA DAR</h2>
-                </div>
-                <div className="container about-main-title">
-                    <h3>
-                        To nic innego jak miejsce stworzone przez rodzinę dla innych rodzin.
-                    </h3>
+                    <h3>To nic innego jak miejsce stworzone przez rodzinę dla innych rodzin.</h3>
                 </div>
 
-                <div className="about-content container">
+                <div className="information-content container">
                     <div className="describe">
                         <div>
                             Czy kiedyś marzyliście o tym by mieć własnego rumaka? 
@@ -40,17 +36,13 @@ export const About = () => {
                         <div>
                             Jesteśmy osobami pełnymi pasji i zaangażowania więc na pewno wspólnie będziemy się dobrze bawić!
                         </div>
-                        <button className="btn-contact">ZAPOZNAJ SIĘ Z NASZĄ OFERTĄ</button>
+                        <a href="#offer"><button className="btn-contact">ZAPOZNAJ SIĘ Z NASZĄ OFERTĄ</button></a>
                     </div>
                     <div className="picture-container">
                         <img src={AboutImg} alt="about" />
                     </div>
                     
                 </div>
-
-                
-                
             </section>
-              
         );
       }

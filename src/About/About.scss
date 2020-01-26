@@ -1,38 +1,6 @@
 @import "../../_variables.scss";
 
-.about-main-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    width: 100%;
-}
 
-.about-main-title h2 {
-    position: absolute;
-    font-family: $titleFontStyle;
-    font-weight: bold;
-    font-size:30px;
-    color:black;
-    margin-top:30px
-}
-
-.about-main-title h3 {
-    position: absolute;
-    font-weight: bold;
-    font-size:15px;
-    text-transform: uppercase;
-    color: $goldColor;
-    text-align: center;
-    padding: 0 15px;
-    margin-top:20px
-    
-}
-
-.about-content{
-    margin-top:0;
-    margin-bottom:0;
-}
 
 .describe {
     display: flex;
@@ -40,7 +8,7 @@
     align-items: center;
     flex-direction: column;
     margin-right: 0;
-    margin-top: 30px;
+    padding-bottom: 30px;
 }
 .describe div {
     font-family: Open Sans;
@@ -73,80 +41,18 @@
     font-weight: bold;
 }
 
-.btn-contact {
-    color:$goldColor;
-    font-size: 14px;
-    font-weight: bold;
-    background: none;
-    border: 1px $goldColor solid;
-    padding: 10px 30px;
-    cursor: pointer;
-    transition: 1s all;
-    outline: none;
-}
-
-.picture-container {
-    margin:5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.picture-container img {
-    width:100%;
-    height:100%
-}
 
 
 @media screen and (min-width: 768px){
-    .about-main-title h2 {
-        font-size:45px;
-        margin-top:40px
-    }
-    .about-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .picture-container {
-        width:434px; 
-        height:330px;
-    }
-
-    .about-main-title h3 {
-        font-size:15px;
-        margin-top:30px;
-        padding: 0;
-    }
-    .picture-container img {
-        width:inherit; 
-        height:inherit;
-    }
     
 
 }
 
 @media screen and (min-width: 1200px){
-    .about-main-title h2 {
-        font-size:55px;
-        margin-top:50px
-    }
-
-    .about-main-title h3 {
-        font-size:15px;
-        margin-top:30px;
-        padding: 0;
-    }
-    .about-content{
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top:60px;
-        margin-bottom:60px;
-    }
-
     .describe {
         align-items: flex-start;
         margin-right: 80px;
-        margin-top: 0;
+        padding-bottom: 0;
     }
 
     .describe div:last-of-type {
@@ -154,21 +60,5 @@
         margin-bottom: 20px;
         width: 70%;
         text-align: left;
-    }
-
-    .picture-container {
-        margin: 0;
-        width:534px; 
-        height:430px;
-    }
-    .picture-container img {
-        width:inherit;
-        height:inherit
-    }
-
-    .btn-contact:hover,.btn-contact:focus {
-        color: white;
-        background-color:$goldColor;
-        outline: none;
     }
 }

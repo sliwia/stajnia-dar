@@ -1,0 +1,77 @@
+@import "../../_variables.scss";
+
+
+
+.describe-trainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 0;
+
+}
+.describe-trainer div, .describe-trainer ul {
+    font-family: $textFontStyle;
+    font-size: 13px;
+    line-height:27px;
+    text-align: justify;
+    letter-spacing: 0.03em;
+    color: #949494;
+    
+}
+
+.describe-trainer div {
+    margin-bottom: 8px;
+}
+
+.describe-trainer ul {
+    font-weight: bold;
+    color: #949494;
+}
+
+.describe-trainer div span {
+    font-weight: bold;
+}
+
+.signature {
+    position: relative;
+    bottom: 5%;
+    left: 0%;
+    font-family: $signatureFontStyle;
+    font-size: 25px;
+    line-height: 60px;
+    letter-spacing: 0.03em;
+    color: #1B1B1B;
+
+}
+
+.describe-trainer div:last-of-type {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: $goldColor;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+@media screen and (min-width: 768px){
+    
+
+}
+
+@media screen and (min-width: 1200px){
+    
+
+    .describe-trainer {
+        align-items: flex-start;
+        margin-right: 80px;
+        margin-top: 0;
+    }
+
+    .describe-trainer div:last-of-type {
+        width: 70%;
+        text-align: left;
+    }
+}

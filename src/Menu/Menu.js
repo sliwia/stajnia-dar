@@ -13,7 +13,7 @@ export const Menu = () => {
                         <li><a href="#about">O nas</a>
                             <ul className="sub-menu" aria-label="submenu">
                                 <li><a href="#about">Stajnia</a></li>
-                                <li><a href="#">Instruktor</a></li>
+                                <li><a href="#about-trainer">Instruktor</a></li>
                             </ul>
                         </li>
                         <span className="big-dot"></span>
@@ -21,11 +21,11 @@ export const Menu = () => {
                         <span className="big-dot"></span>
                         <li><a href="#">Galeria</a></li>
                         <span className="big-dot"></span>
-                        <li><a href="#">Oferta</a></li>
+                        <li><a href="#offer">Oferta</a></li>
                         <span className="big-dot"></span>
-                        <li><a style={{cursor: 'not-allowed',opacity: 0.6}}>E-rezerwacje</a></li>
-                        <span className="big-dot"></span>
-                        <li><a href="#">Cennik</a></li>
+                        {/* <li><a style={{cursor: 'not-allowed',opacity: 0.6}}>E-rezerwacje</a></li>
+                        <span className="big-dot"></span> */}
+                        <li><a href="#price-list">Cennik</a></li>
                         <span className="big-dot"></span>
                         <li><a href="#">Kontakt</a></li>
                     
