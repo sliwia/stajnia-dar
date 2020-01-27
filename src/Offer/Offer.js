@@ -33,7 +33,7 @@ export const Offer = () => {
                     
                 </div>
                 <div className="picture-container picture-container--size">
-                    <img src={ OfferImg } alt="about" />
+                    <img src={ OfferImg } alt="offer-img" />
                 </div>
             </div>
         </section>

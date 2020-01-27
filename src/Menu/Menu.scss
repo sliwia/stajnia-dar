@@ -5,29 +5,30 @@
     top: 0;
     left: 0;
     right:0;
-    height: 80px;
-    background: #212020;
+    height: 95vh;
+    background: rgba(34, 32, 32, 0.98);
     z-index: 100;
+    padding-top: 5%;
 }
 
 #menu-container nav {
     margin-right: 50px;
     height: 100% ;
     font-family: $textFontStyle;
-    
 }
 
 #multi-drop-menu ul {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     list-style-type: none;
     height: 100%;
 }
 
+
 #multi-drop-menu a {
     text-decoration: none;
-    font-size:16px;
 }
 
 
@@ -48,15 +49,9 @@
 
 #multi-drop-menu li a {
     color: #fff;
+    font-size:14px;
 }
-#multi-drop-menu li a:hover{
-    color: $goldColor;
-}
-  
-#multi-drop-menu li:hover,
-#multi-drop-menu li:focus-within {
-    cursor: pointer;
-}
+
 
 #multi-drop-menu li:focus-within a {
     outline: none;
@@ -72,16 +67,7 @@
     margin-left: -17px;
     display: none;
 }
-  
-#multi-drop-menu ul li:hover > ul,
-#multi-drop-menu ul li:focus-within > ul,
-#multi-drop-menu ul li ul:hover,
-#multi-drop-menu ul li ul:focus {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    z-index: 1000;
-}
+
   
 #multi-drop-menu ul li ul li {
     background: #212020;
@@ -92,11 +78,99 @@
 
 .big-dot {
     display: inline-block;
-    height: 8px;
-    width: 8px;
+    height: 1px;
+    width: 80%;
     background-color: $goldColor;
+    border-radius: 0;
+}
+
+.menu-container--visibility-hiden {
+    display: none;
+    visibility: hidden;
+}
+.menu-container--visibility-visible {
+    display: block;
+    visibility: visible;
+}
+
+.burger-button {
+    display: block;
+    visibility: visible;
+    position: fixed;
+    top:15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    z-index: 600;
     border-radius: 50%;
-    margin: 0 10px;
+    background: $goldColor;
+    border:1px solid $mainFontColor;
+    outline: none;
+    padding:0;
+    padding-top: 5px;
+}
+
+.burger-button:focus {
+    border:none;
+    outline: none;
+}
+
+@media screen and (min-width: 768px){
+    #menu-container {
+        display: block;
+        visibility: visible;
+        padding-top: 0;
+        height: 80px;
+        background:rgba(34, 32, 32, 0.98);
+    }
+
+    #multi-drop-menu ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #multi-drop-menu li a {
+        font-size:13px;
+    }
+
+    .burger-button {
+        display: none;
+        visibility: hidden;
+    }
+
+    .big-dot {
+        height: 8px;
+        width: 8px;
+        background-color: $goldColor;
+        border-radius: 50%;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #multi-drop-menu li a {
+        font-size: 16px;
+    }
+    #multi-drop-menu li a:hover{
+        color: $goldColor;
+    }
+      
+    #multi-drop-menu li:hover,
+    #multi-drop-menu li:focus-within {
+        cursor: pointer;
+    }
+
+    #multi-drop-menu ul li:hover > ul,
+    #multi-drop-menu ul li:focus-within > ul,
+    #multi-drop-menu ul li ul:hover,
+    #multi-drop-menu ul li ul:focus {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        z-index: 1000;
+    }
+
 }
 
 

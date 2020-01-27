@@ -38,7 +38,7 @@ export const CarosuelWithPhotos = () => {
                     <div className="carousel-content">
                       <h1 className="main-title-carousel">{mainTitle}</h1>
                       <p className="main-desc-text">{mainDesc}</p>
-                      <button className="btn-offer">ZAPOZNAJ SIĘ Z NASZĄ OFERTĄ</button>
+                      <a href="#offer"><button className="btn-offer">ZAPOZNAJ SIĘ Z NASZĄ OFERTĄ</button></a>
                     </div>
                     
                   </Carousel.Caption>
