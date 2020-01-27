@@ -2,15 +2,14 @@
 
 .footer-content {
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 45px;
     width: 100%;
     background: $goldColor;
-    color: white;
-    letter-spacing: 0.03em;
     padding: 5px;
 }
+
 .footer-content span {
     color: white;
     font-size: 12px;
@@ -18,8 +17,26 @@
     margin-left: 10px;
 }
 
+.footer__element--visibility {
+    display: none;
+    visibility: hidden;
+}
 
 .map-modal {
     width: 100vw;
     height: 300px;
-  }
+}
+
+@media screen and (min-width: 768px){
+    .footer-content {
+        justify-content: flex-end;
+    }
+    .footer__element--visibility {
+        display: inline;
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    
+}

@@ -36,7 +36,7 @@
     padding-top: 100px;
 }
 
-.btn-offer{
+.btn-offer {
     font-family: $textFontStyle;
     color:white;
     font-size: 15px;
@@ -49,10 +49,11 @@
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .main-title-carousel {
         font-size: 25pt;
     }
+
     .main-desc-text {
         font-size: 11pt;
     }
@@ -63,13 +64,16 @@
         margin-bottom: 30px;
         font-size: 35pt;
     }
+
     .main-desc-text {
         font-size: 13pt;
     }
+
     .carosuel-photo {
         object-fit: inherit;
     }
-    .btn-offer:hover, .btn-offer:focus{
+
+    .btn-offer:hover, .btn-offer:focus {
         background-color:$goldColor;
         outline: none;
     }

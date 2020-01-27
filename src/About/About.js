@@ -31,8 +31,8 @@ export const About = () => {
                             Talenty powoli rozwijamy nasze miejsce... naszą stajnię.
                             Mamy nadzieję, że nie będzie ona tylko miejscem jazdy konnej ale i 
                             miejscem na rozmowy, odpoczynek, świadectwem wiary i... może wspólnej modlitwy?
-                        
                         </div>
+
                         <div>
                             Jesteśmy osobami pełnymi pasji i zaangażowania więc na pewno wspólnie będziemy się dobrze bawić!
                         </div>

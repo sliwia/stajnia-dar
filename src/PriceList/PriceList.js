@@ -15,7 +15,6 @@ export const PriceList = () => {
         'Usługi związane z IMPRINTINGIEM źrebiąt':'50zł/h',
         'Zajeżdżalnie i układanie młodych koni pod siodło':'50zł/h',
         'Przygotowanie koni do zawodów jeździeckich':'50zł/h',
-
     }
 
     return (
@@ -26,7 +25,6 @@ export const PriceList = () => {
             </div>
             <div className="information-content container">
                 <div className="services-desc-price">
-
                     {
                         Object.entries(servicesList).map((element,index) => {
                             return (

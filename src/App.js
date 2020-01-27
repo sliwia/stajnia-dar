@@ -21,7 +21,6 @@ function App() {
       <PriceList />
       <Contact />
       <Footer />
-      
     </div>
   );
 }

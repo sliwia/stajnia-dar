@@ -1,7 +1,6 @@
 @import "../../_variables.scss";
 
 
-
 .describe-trainer {
     display: flex;
     justify-content: center;
@@ -11,8 +10,6 @@
 
 }
 .describe-trainer div, .describe-trainer ul {
-    font-family: $textFontStyle;
-    line-height:27px;
     text-align: justify;
 }
 
@@ -22,7 +19,7 @@
 
 .describe-trainer ul {
     font-weight: bold;
-    color: #949494;
+
 }
 
 .describe-trainer div span {
@@ -31,14 +28,11 @@
 
 .signature {
     position: relative;
-    bottom: 5%;
-    left: 0%;
+    top: 5%;
+    left: 20%;
     font-family: $signatureFontStyle;
     font-size: 25px;
-    line-height: 60px;
-    letter-spacing: 0.03em;
     color: #1B1B1B;
-
 }
 
 .describe-trainer div:last-of-type {
@@ -50,16 +44,15 @@
     font-weight: bold;
 }
 
-
-
 @media screen and (min-width: 768px){
     
-
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
+    .signature {
+        left: 60%;
+    }
     
-
     .describe-trainer {
         align-items: flex-start;
         margin-right: 80px;

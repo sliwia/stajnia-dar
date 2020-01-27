@@ -1,7 +1,6 @@
 @import "../../_variables.scss";
 
 
-
 .describe {
     display: flex;
     justify-content: center;
@@ -11,15 +10,7 @@
     padding-bottom: 30px;
 }
 .describe div {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height:27px;
     text-align: justify;
-    letter-spacing: 0.03em;
-    color: #949494;
-    
 }
 
 .describe div span {
@@ -41,14 +32,11 @@
     font-weight: bold;
 }
 
-
-
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     
-
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
     .describe {
         align-items: flex-start;
         margin-right: 80px;
